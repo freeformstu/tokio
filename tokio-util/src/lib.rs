@@ -33,7 +33,7 @@ cfg_codec! {
 }
 
 cfg_net! {
-    #[cfg(not(target_arch = "wasm32"))]
+    #[cfg(not(target_family = "wasm"))]
     pub mod udp;
     pub mod net;
 }
